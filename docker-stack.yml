@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rhminer:
+    image: cecepabdul/rhminer:latest
+    environment:
+      - RHMINER_POOL_URL=pool.pascalcoin.org:3336
+      - RHMINER_USER=587770-89.0.stack/ceceptkj67@gmail.com
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
